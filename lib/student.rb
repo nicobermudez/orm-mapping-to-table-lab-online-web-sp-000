@@ -12,10 +12,10 @@ class Student
 
   def self.create_table
     sql =  <<-SQL
-      CREATE TABLE IF NOT EXISTS songs (
+      CREATE TABLE IF NOT EXISTS name (
         id INTEGER PRIMARY KEY,
         name TEXT,
-        album TEXT
+        grade INTEGER
         )
         SQL
     DB[:conn].execute(sql)
