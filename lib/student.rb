@@ -10,9 +10,9 @@ class Student
     @grade=grade
   end
 
-  def self.save
+  def save
     sql = <<-SQL
-  INSERT INTO songs (name, album) 
+  INSERT INTO songs (name, album)
   VALUES (?, ?)
 SQL
 
@@ -20,13 +20,13 @@ DB[:conn].execute(sql, self.name, self.album)
   end
 
   def self.create_table
-    sql =  <<-SQL 
+    sql =  <<-SQL
       CREATE TABLE IF NOT EXISTS songs (
-        id INTEGER PRIMARY KEY, 
-        name TEXT, 
+        id INTEGER PRIMARY KEY,
+        name TEXT,
         album TEXT
         )
         SQL
-    DB[:conn].execute(sql) 
+    DB[:conn].execute(sql)
   end
 end
