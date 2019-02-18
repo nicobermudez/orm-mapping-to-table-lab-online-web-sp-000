@@ -5,4 +5,7 @@ class Students
     @name=name
     @grade=grade
   end
+
+  def self.save()
+  end
 end
