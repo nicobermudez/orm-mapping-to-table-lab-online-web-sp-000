@@ -12,4 +12,7 @@ class Student
 
   def self.save()
   end
+
+  def self.create_table 
+  end
 end
