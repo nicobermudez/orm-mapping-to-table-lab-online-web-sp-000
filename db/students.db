@@ -2,5 +2,5 @@ class Students
   attr_accessor :id, :name, :grade
 
   def initialize(name:, grade:, id:)
-
+  end
 end
