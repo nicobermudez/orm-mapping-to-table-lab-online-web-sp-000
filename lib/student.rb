@@ -15,6 +15,7 @@ class Student
   INSERT INTO songs (name, album)
   VALUES (?, ?)
 SQL
+end
 
 DB[:conn].execute(sql, self.name, self.album)
   end
