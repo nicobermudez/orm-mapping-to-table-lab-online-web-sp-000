@@ -15,7 +15,7 @@ class Student
   INSERT INTO songs (name, album)
   VALUES (?, ?)
   SQL
-  DB[:conn].execute(sql, self.name, self.album)
+  DB[:conn].execute(sql, self.name, selfgrade)
   end
 
   def self.create_table
