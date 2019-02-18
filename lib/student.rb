@@ -37,4 +37,7 @@ class Student
     student
   end
 
+  def self.drop_table
+  end
+
 end
